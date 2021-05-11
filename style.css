@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #7c919c;
-  --secondary-color: #c7c1b5;
+  --secondary-color: teal;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
   padding: 1.5rem;
   display: flex;
   justify-content: flex-end;
+  background-color: var(--secondary-color);
 }
 
 .search {
@@ -32,7 +33,7 @@ body {
 }
 
 .search::placeholder {
-  color: plum;
+  color: steelblue;
 }
 
 .search:focus {
