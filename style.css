@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #7c919c;
+  --primary-color: #a9cada;
   --secondary-color: teal;
 }
 
@@ -47,14 +47,62 @@ body {
 }
 
 .movie {
-  width: 300px;
-  margin: 1rem;
+  box-shadow: 0 5px 6px 3px rgb(3 100 111);
   background-color: var(--secondary-color);
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
+  margin: 1rem;
   overflow: hidden;
+  margin: 1rem;
+  width: 300px;
 }
 
 .movie img {
   width: 100%;
+}
+
+.movie-info {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+  padding: 10px 15px 15px;
+}
+
+h3 {
+}
+
+.movie-info span {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 3px 8px;
+}
+
+.movie-info span.green {
+  color: green;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.overview {
+  background-color: snow;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  padding: 15px;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+  overflow-y: auto;
 }
